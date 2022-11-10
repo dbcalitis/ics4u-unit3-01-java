@@ -32,11 +32,15 @@ final class Main {
      * @return String the reversed string.
      */
     public static String reverseString(String str) {
+        final String returnValue;
+
         if (str.length() == 1) {
-            return str;
+            returnValue = str;
         } else {
-            return reverseString(str.substring(1)) + str.charAt(0);
+            returnValue = reverseString(str.substring(1)) + str.charAt(0);
         }
+
+        return returnValue;
     }
 
     /**
